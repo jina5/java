@@ -31,7 +31,6 @@ public class client {
 			pw.flush();
 			n = br.read();
 			System.out.println("보낸 숫자의 약수들의 총합 :"+ n);
-			
 
 		} catch (IOException e) {
 			e.printStackTrace();
