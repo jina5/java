@@ -1,0 +1,10 @@
+main----(1.command)-----> hander mapping (create controller) 
+↓   <--(2.controller)----
+↓      ↑         ↑
+↓      ↑         register controller     <-----     student service
+↓ -----↑                                 ----->
+    3.execute
+    
+    
+searchstudent의 return으로 studentvo가 저장된 메모리 주소가 나오기 때문에
+메서드가 달라도 direct로 접근 가능

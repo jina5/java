@@ -1,0 +1,12 @@
+primitive type -> reference type(wrapper class)
+		byte -> Byte
+		short -> Short
+		int -> Integer
+		long -> Long
+		float -> Float
+		double -> Double
+		char -> Character
+		boolean -> Boolean
+		
+		평소에도 reference type으로 써도 된다...
+		
