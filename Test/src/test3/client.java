@@ -25,7 +25,7 @@ public class client {
 
 			System.out.print("숫자 입력 : ");
 			int n = sc.nextInt(); sc.nextLine();
-			pw.print(n);
+			pw.print(n); //pw 로 보내니까 숫자가 문자형이 된다... 숫자 1을 49로 인식!!  
 			pw.flush();
 			n = br.read();
 			System.out.println("보낸 숫자의 약수들의 총합 :"+ n);

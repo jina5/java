@@ -24,7 +24,7 @@ public class numberserver {
 			dis = new DataInputStream(client.getInputStream());
 			int num = dis.readInt();
 			String result = "";
-			Random r = new Random();
+			
 			
 			for(int i=1;i<num;i++) {
 				if(num % i == 0)

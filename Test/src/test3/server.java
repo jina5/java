@@ -25,7 +25,7 @@ public class server {
 			br = new BufferedReader(new InputStreamReader(client.getInputStream()));
 			pw = new PrintWriter(client.getOutputStream());
 			System.out.println(br.read());
-			Integer n = br.read();
+			Integer n = br.read(); //readInt로 바꾸고싶어 br은 지원안함 다른 형태의 입력메서드 사용해야
 			int[] arr = new int[n];
 			for (int i = 1; i <= n; i++) {
 				if (n % i == 0) {
