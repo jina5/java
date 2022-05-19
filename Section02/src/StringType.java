@@ -31,6 +31,7 @@ public class StringType {
 		System.out.println(!str1.equals(str2)); //문자열 동일, false
 	
 	
+		
 	}
 
 }
