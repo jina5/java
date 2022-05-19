@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class JDBCTeST4 {
+public class JDBCTest3 {
 //학생이름 일부분 입력 받아서 입력받은 문자열을 포함하는 학생들을 조회 (sname like '%문자열%')
 	public static void main(String[] args) {
 		try {

@@ -5,38 +5,32 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
-public class JDBCTeST1 {
-
+public class JDBCTest2 {
+//입력받은 점수 이상의 학생목록 조회
 	public static void main(String[] args) {
-
-		//1. Driver Load
-		//2. DB Connect
-		//3. SQL Generate
-		//4. create Statement (SQL 실행 인터페이스)
-		//5. execute SQL
-		//6. close
-		
 		try {
-			//1. Driver Load
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			System.out.println("드라이버 로딩완료");
-			//2. DB Connect (접속 url)
 			Connection conn = 
 					DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","jina","tiger");
 			System.out.println("DB 접속 완료");
-			//3. SQL Generate
-			String sql = "select sno, sname, major_no, score from student"; //sql문에 세미콜론x
-			//4. create Statement (SQL 실행 인터페이스)
-			Statement stmt = conn.createStatement();
-			//5. execute SQL 
+			String score = null;
+			Scanner sc = new Scanner(System.in);
+			System.out.print("점수입력 : ");
+			score = sc.nextLine(); //sql문으로 넘어가는 것이기 때문에 숫자여도 string으로 사용해도 된다.
 			
+			String sql = "select sno, sname, major_no, score from student where score > " + score;
+			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
+			
 			while(rs.next()) { 
 				System.out.println(rs.getString(1)+" "+rs.getString("sname")+" " 
-			+ rs.getInt(3) + " "+ rs.getDouble("score")); // () 안에는 컬럼번호 or "컬럼명" 
+			+ rs.getInt(3) + " "+ rs.getDouble("score"));			
 			}
-			//6. close
+			
+
 			rs.close();
 			stmt.close();
 			conn.close();
@@ -46,10 +40,6 @@ public class JDBCTeST1 {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
-		
 		
 	}
 
