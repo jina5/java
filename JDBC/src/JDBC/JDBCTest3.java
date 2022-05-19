@@ -18,7 +18,7 @@ public class JDBCTest3 {
 					DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","jina","tiger");
 			System.out.println("DB 접속 완료");
 			String name = null;
-			Scanner sc = new Scanner(System.in);
+			Scanner sc = new Scanner(System.in); //
 			System.out.print("문자열 입력 : ");
 			name = sc.nextLine(); 
 //s1		String sql = "select sno, sname, major_no, score from student where sname like '%" + name + "%'";
