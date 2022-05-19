@@ -1,5 +1,3 @@
+/config/
 /controller/
-/exception/
-/main/
-/service/
-/vo/
+/dao/

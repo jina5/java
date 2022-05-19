@@ -15,7 +15,12 @@ public class HandlerMapping {
 		Controller controller = null;
 		
 		switch (no) {
-		
+		case 2 :
+			 controller = new SearchStudentController();
+			 break;
+		case 5 :
+			controller = new PrintAllStudentController();
+			break;
 		}
 		
 		
