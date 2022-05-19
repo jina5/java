@@ -16,7 +16,7 @@ public class JDBCTest1 {
 		//4. create Statement (SQL 실행 인터페이스)
 		//5. execute SQL
 		//6. close
-		
+	
 		try {
 			//1. Driver Load
 			Class.forName("oracle.jdbc.driver.OracleDriver");
