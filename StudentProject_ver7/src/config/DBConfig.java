@@ -7,7 +7,7 @@ public interface DBConfig {
 		public String DB_USER = "jina";
 		public String DB_PASSWD = "tiger";
 		
-		
+		//
 		
 		
 	}
