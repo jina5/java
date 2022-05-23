@@ -37,4 +37,3 @@ public class RegisterController implements Controller {
 	}
 }
 
-
