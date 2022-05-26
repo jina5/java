@@ -12,7 +12,7 @@ public class BitOperator {
 		//bit xor operator ^
 		System.out.println(n1^n2); //1010 = 10
 		//bit not operator ~
-		System.out.println(~n1); 
+		System.out.println(~n1); //1더하고 부호바꾼다. -14
 		//left-shift operator
 		System.out.println(n1<<1); //1번 왼쪽으로, 2배
 		System.out.println(n1<<2); //2번 왼쪽으로, 4배
