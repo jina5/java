@@ -37,8 +37,8 @@ public class Casting {
 		double result = 3.0 +3.1415; // double + double = 형변환이 없음
 		System.out.println(result); //6.14149996어쩌고... 소수점 부정확하게 나올 때 있어서 무시가능
 		
-		
-
+		float f = (float) 3.14;
+		System.out.println(""+7+7);
 	}
 
 }

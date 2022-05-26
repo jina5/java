@@ -19,8 +19,13 @@ public class VariableType {
  * 
  */
 	public static void main(String[] args) {
-long n = 100l; // L:100은 long 타입 데이터
+long n = 0b100; // L:100은 long 타입 데이터
+System.out.println(3%2);
 System.out.println(n);
+
+long l = 220000000l;
+long m = 10000000;
+System.out.println(m);
 
 double d = 3.1415;
 System.out.println(d);
