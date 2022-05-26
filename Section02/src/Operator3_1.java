@@ -6,6 +6,7 @@ public class Operator3_1 {
 		int result = n1++ +5 * ++n2 + n1;
 		System.out.println(result);//5+5*4+6=31
 
+		
 	}
 
 }
