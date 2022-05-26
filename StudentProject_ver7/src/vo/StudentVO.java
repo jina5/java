@@ -1,5 +1,6 @@
 package vo;
 
+
 public class StudentVO {
 
 	
@@ -8,8 +9,8 @@ public class StudentVO {
 	private int majorNo;
 	private String majorName;
 	private double score;
-	public StudentVO(String sno, String sname, int majorNo, String majorName, double score) {
-		super();
+	public StudentVO(String sno, String sname, int majorNo, String majorName,double score) {
+	
 		this.sno = sno;
 		this.sname = sname;
 		this.majorNo = majorNo;
@@ -51,6 +52,7 @@ public class StudentVO {
 	public String toString() {
 		return sno + "\t" + sname + "\t" + majorNo + "\t" + majorName + "\t" + score ;
 	}
+	
 	
 			
 }
